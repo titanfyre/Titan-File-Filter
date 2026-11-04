@@ -39,7 +39,7 @@ See [validation](docs/VALIDATION.md) and [deployment prerequisites](docs/DEPLOYM
 | Export | Explicit local UTF-8 CSV export; no automatic upload or file-content collection |
 | Recovery | Closing or crashing the owner removes this temporary policy; no background agent |
 
-The private driver uses Filter Manager. A SYSTEM/administrator-only communication
+The driver uses Filter Manager. A SYSTEM/administrator-only communication
 port admits one client. Process-specific rules retain a process reference rather
 than selecting a future process that reuses its PID. Policy replacement is atomic;
 in-flight operations can still complete under their previous policy generation.
