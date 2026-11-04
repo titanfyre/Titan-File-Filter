@@ -19,7 +19,7 @@ without reading file contents or waiting for an application to decide each I/O.
 
 ![Explicitly labelled offline interface](docs/app.png)
 
-**Engineering preview:** the application, SDK and private minifilter compile and
+**Engineering preview:** the application, SDK and evaluation minifilter compile and
 pass their documented offline checks. A genuine Microsoft altitude allocation,
 driver signing and live kernel validation are still required. The download has
 no installable driver or installer binary. It cannot enforce rules by itself.
@@ -155,6 +155,12 @@ The UI refresh interval (250 ms) affects display, not policy decisions.
 
 ## Build
 
+Demo/evaluation driver source is available; see [driver/README.md](driver/README.md) for
+build instructions and separate evaluation-source terms. Those terms apply to
+Titan-authored driver code. Third-party source licenses and existing application/SDK
+licenses remain applicable. Full/commercial implementation and private signing or
+activation material are excluded.
+
 Use Visual Studio 2022 Desktop C++, CMake 3.20+ and the Windows SDK:
 
 ```powershell
@@ -166,12 +172,12 @@ Use Visual Studio 2022 Desktop C++, CMake 3.20+ and the Windows SDK:
 
 Outputs are under `obj/Build/bin/Release`. Offline tests exercise protocol bounds,
 policy validation, local directory normalization and missing/untrusted-package
-rejection. They do not load the private minifilter or prove its runtime behavior.
+rejection. They do not load The evaluation minifilter or prove its runtime behavior.
 
 ## Commercial integration
 
 Public application, two-file SDK, examples and installer sources: [MIT](LICENSE).
-The separate driver implementation stays private; evaluation/production binary
+The evaluation driver source is documented in [driver/README.md](driver/README.md); full/commercial implementation is excluded; evaluation/production binary
 redistribution uses separate terms. This preview has no technical trial timer or
 online activation enforcement.
 

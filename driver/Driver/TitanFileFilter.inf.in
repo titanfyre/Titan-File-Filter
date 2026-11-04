@@ -1,0 +1,47 @@
+; TEMPLATE ONLY. Build.ps1 requires a genuine allocated altitude before producing an INF.
+[Version]
+Signature="$Windows NT$"
+Class=SecurityEnhancer
+ClassGuid={D02BC3DA-0C8E-4945-9BD5-F1883C226C8C}
+Provider=%Provider%
+DriverVer=10/25/2026,0.1.0.0
+CatalogFile=TitanFileFilter.cat
+PnpLockdown=1
+
+[DestinationDirs]
+DriverFiles=13
+[DefaultInstall.NTamd64.10.0...19041]
+CopyFiles=DriverFiles
+[DefaultInstall.NTamd64.10.0...19041.Services]
+AddService=TitanFileFilter,,Service
+[DefaultInstall.NTamd64.10.0...19041.HW]
+[DriverFiles]
+TitanFileFilter.sys
+[SourceDisksNames]
+1=%Disk%
+[SourceDisksFiles]
+TitanFileFilter.sys=1
+[Service]
+DisplayName=%Description%
+ServiceBinary=%13%\TitanFileFilter.sys
+Dependencies=FltMgr
+ServiceType=2
+StartType=3
+ErrorControl=1
+LoadOrderGroup="FSFilter Security Enhancer"
+AddReg=Settings
+[Settings]
+; No comprehensive paging/offload/BypassIO enforcement is claimed.
+HKR,"Parameters","SupportedFeatures",0x00010001,0x0000000F
+HKR,"Parameters\Instances","DefaultInstance",0x00000000,"TitanFileFilter Instance"
+HKR,"Parameters\Instances\TitanFileFilter Instance","Altitude",0x00000000,"__ALLOCATED_ALTITUDE__"
+HKR,"Parameters\Instances\TitanFileFilter Instance","Flags",0x00010001,0
+; Downlevel Filter Manager instance layout, for Windows 10 and pre-24H2 Windows 11.
+HKR,"Instances","DefaultInstance",0x00000000,"TitanFileFilter Instance"
+HKR,"Instances\TitanFileFilter Instance","Altitude",0x00000000,"__ALLOCATED_ALTITUDE__"
+HKR,"Instances\TitanFileFilter Instance","Flags",0x00010001,0
+HKR,,"SupportedFeatures",0x00010001,0x0000000F
+[Strings]
+Provider="Titanfyre"
+Description="Titan File Filter - scoped access policy minifilter"
+Disk="Titan File Filter installation media"
