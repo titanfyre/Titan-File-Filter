@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package><metadata><id>TitanCSA.TitanFileFilter.Native</id><version>0.1.0</version><authors>TitanCSA</authors><description>Public Windows x64 C++ source SDK for Titan-File-Filter. No kernel driver or installer is included.</description><readme>README.md</readme><license type="expression">MIT</license><repository type="git" url="https://github.com/titanfyre/Titan-File-Filter" /></metadata></package>
