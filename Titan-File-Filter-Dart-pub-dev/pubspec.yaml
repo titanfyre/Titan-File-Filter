@@ -1,0 +1,9 @@
+name: titan_file_filter
+description: Direct Windows x64 Titan-File-Filter SDK with native operations and exact uint64 identifiers.
+version: 1.0.0
+homepage: https://github.com/titanfyre/Titan-File-Filter
+repository: https://github.com/titanfyre/Titan-File-Filter
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+platforms:
+  windows:

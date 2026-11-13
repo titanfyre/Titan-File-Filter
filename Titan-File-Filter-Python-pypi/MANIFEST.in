@@ -1,0 +1,3 @@
+include README.md LICENSE
+recursive-include titan_file_filter *.py *.dll
+recursive-include docs *
