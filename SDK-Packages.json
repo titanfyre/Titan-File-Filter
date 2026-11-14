@@ -239,13 +239,13 @@
       "api_prefix": "titan_file_filter_json_"
     },
     "Dart/pub-dev": {
-      "status": "built_fixture_and_production_verified",
+      "status": "submitted_requires_public_verification",
       "name": "titan_file_filter",
       "version": "1.0.0",
       "directory": "Titan-File-Filter-Dart-pub-dev",
       "registry_published": false,
       "documentation_bundled": true,
-      "url": null,
+      "url": "https://pub.dev/packages/titan_file_filter",
       "public_consumer_verified": false,
       "module": "titan_file_filter",
       "dll_name": "TitanFileFilterJsonSDK.dll",
