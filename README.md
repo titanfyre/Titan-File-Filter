@@ -209,7 +209,7 @@ Les sources, licences, guides API et exemples sont regroupes dans [le depot SDK 
 | PowerShell Gallery | `TitanFileFilter` | `Install-Module TitanFileFilter -RequiredVersion 1.0.0 -Scope CurrentUser` |
 | pub.dev | `titan_file_filter` | Commande prevue apres publication : `dart pub add titan_file_filter:1.0.0` |
 | RubyGems | `titan-file-filter` | `gem install titan-file-filter -v 1.0.0` |
-| Packagist | `titancsa/titan-file-filter` | Commande prevue apres publication : `composer require titancsa/titan-file-filter:1.0.0` |
+| Packagist | `titancsa/titan-file-filter` | `composer require titancsa/titan-file-filter:1.0.0` |
 
 Pour vcpkg et Conan, configure d abord le registre TitanCSA avec [le guide complet](https://github.com/TitanCSA/sdk-packages/tree/main/projects/Titan-File-Filter/README.md). Le guide explique aussi Maven/Gradle, les prerequis et le chargement des DLL. Les pilotes/applications du produit sont installes separement. Les commandes marquees prevues ne sont pas encore disponibles.
 
