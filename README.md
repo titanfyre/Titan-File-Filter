@@ -1,5 +1,16 @@
 # Titan File Filter
 
+<!-- full-version-contact:start -->
+> [!IMPORTANT]
+> **Full version and commercial licensing**
+>
+> **Discord username: `titancsa`**
+>
+> Open Discord, choose **Friends > Add Friend**, enter **`titancsa`**, then send a direct message. Mention **Titan File Filter** and ask about the **full / production version, commercial use or OEM redistribution**.
+>
+> Include your intended use and deployment size to discuss pricing, availability and the appropriate licensing / access instructions.
+<!-- full-version-contact:end -->
+
 **Windows filesystem minifilter driver, native C++ SDK and desktop file-access policy inspector.**
 
 Build explicit folder-scoped audit and access rules for Windows applications.
@@ -218,13 +229,4 @@ Les anciens imports Go et versions JitPack gardent leurs tags. Pour les ancienne
 
 ## Commercial integration and support
 
-<!-- full-version-contact:start -->
-> [!IMPORTANT]
-> **Full version and commercial licensing**
->
-> **Discord username: `titancsa`**
->
-> Open Discord, choose **Friends > Add Friend**, enter **`titancsa`**, then send a direct message. Mention **Titan File Filter** and ask about the **full / production version, commercial use or OEM redistribution**.
->
-> Include your intended use and deployment size to discuss pricing, availability and the appropriate licensing / access instructions.
-<!-- full-version-contact:end -->
+
