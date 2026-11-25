@@ -1,5 +1,11 @@
 # Titan File Filter
 
+<!-- simple-start:start -->
+Explore ways to watch or restrict file access in selected folders.
+
+**Start here.** Start with the source preview. The live driver is still in development.
+<!-- simple-start:end -->
+
 <!-- full-version-contact:start -->
 > [!IMPORTANT]
 > **Full version and commercial licensing**
@@ -228,5 +234,3 @@ Les anciens imports Go et versions JitPack gardent leurs tags. Pour les ancienne
 <!-- central-sdk-packages:end -->
 
 ## Commercial integration and support
-
-
