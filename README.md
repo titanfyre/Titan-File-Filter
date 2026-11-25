@@ -3,7 +3,11 @@
 <!-- simple-start:start -->
 Explore ways to watch or restrict file access in selected folders.
 
-**Start here.** Start with the source preview. The live driver is still in development.
+[First steps](#first-steps) · [Develop](#sdk-and-packages) · [Maintain](https://github.com/TitanCSA/sdk-packages/blob/main/CONTRIBUTING.md)
+
+## First steps
+
+Start with the source preview. The live driver is still in development.
 <!-- simple-start:end -->
 
 <!-- full-version-contact:start -->
@@ -205,32 +209,11 @@ intended for lawful engineering and integration. You are responsible for your
 deployment and use; the licenses describe applicable terms and limitations.
 
 <!-- central-sdk-packages:start -->
-## Paquets et installation
+<a name="paquets-et-installation"></a>
 
-Les sources, licences, guides API et exemples sont regroupes dans [le depot SDK dedie](https://github.com/TitanCSA/sdk-packages/tree/main/projects/Titan-File-Filter). Choisis le paquet a installer puis execute sa commande dans son dossier.
+## SDK and packages
 
-| Registre | Paquet | Installation / utilisation |
-| --- | --- | --- |
-| vcpkg | `titan-file-filter` | `vcpkg install titan-file-filter:x64-windows` |
-| Conan | `titan-file-filter` | `conan install --requires=titan-file-filter/0.1.0 -r titancsa --build=missing -s compiler.cppstd=17` |
-| NuGet | `Titan-File-Filter.Native` | `Install-Package Titan-File-Filter.Native -Version 0.1.0` |
-| NuGet | `TitanFileFilter.SDK` | `dotnet add package TitanFileFilter.SDK --version 1.0.0` |
-| PyPI | `titan-file-filter` | Commande prevue apres publication : `python -m pip install titan-file-filter==1.0.0` |
-| Conda | `titan-file-filter` | `conda install --override-channels -c https://raw.githubusercontent.com/TitanCSA/sdk-packages/089bc73095aa8eda89bacbe10d0b9e58394b0207/conda-channel -c conda-forge titan-file-filter` (canal TitanCSA) |
-| crates.io | `titan-file-filter` | `cargo add titan-file-filter@1.0.0` |
-| npm | `titan-file-filter` | Commande prevue apres publication : `npm install titan-file-filter@1.0.0` |
-| Maven Central | `io.github.titancsa:titan-file-filter` | `io.github.titancsa:titan-file-filter:1.0.0 (pom.xml / Gradle)` |
-| JitPack | `com.github.titanfyre:Titan-File-Filter` | `com.github.titanfyre:Titan-File-Filter:java-sdk-v1.0.0 (avec le depot JitPack)` |
-| Go Modules | `github.com/titanfyre/Titan-File-Filter/Titan-File-Filter-Go-modules` | `go get github.com/titanfyre/Titan-File-Filter/Titan-File-Filter-Go-modules@v1.0.0` |
-| pkg.go.dev | `github.com/titanfyre/Titan-File-Filter/Titan-File-Filter-Go-modules` | `Documentation : https://pkg.go.dev/github.com/titanfyre/Titan-File-Filter/Titan-File-Filter-Go-modules@v1.0.0` |
-| PowerShell Gallery | `TitanFileFilter` | `Install-Module TitanFileFilter -RequiredVersion 1.0.0 -Scope CurrentUser` |
-| pub.dev | `titan_file_filter` | Commande prevue apres publication : `dart pub add titan_file_filter:1.0.0` |
-| RubyGems | `titan-file-filter` | `gem install titan-file-filter -v 1.0.0` |
-| Packagist | `titancsa/titan-file-filter` | `composer require titancsa/titan-file-filter:1.0.0` |
-
-Pour vcpkg et Conan, configure d abord le registre TitanCSA avec [le guide complet](https://github.com/TitanCSA/sdk-packages/tree/main/projects/Titan-File-Filter/README.md). Le guide explique aussi Maven/Gradle, les prerequis et le chargement des DLL. Les pilotes/applications du produit sont installes separement. Les commandes marquees prevues ne sont pas encore disponibles.
-
-Les anciens imports Go et versions JitPack gardent leurs tags. Pour les anciennes archives SDK, utilise [les liens de remplacement](https://github.com/TitanCSA/sdk-packages/blob/main/release-assets/URL-MIGRATION.json).
+Choose a language in the [SDK and package guide](https://github.com/TitanCSA/sdk-packages/tree/main/projects/Titan-File-Filter#readme) for exact install commands and examples. If your example requires a driver or app, install it separately.
 <!-- central-sdk-packages:end -->
 
 ## Commercial integration and support
